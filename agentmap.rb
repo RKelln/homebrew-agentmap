@@ -5,21 +5,21 @@
 class Agentmap < Formula
   desc "Navigation maps for AI agents in markdown files"
   homepage "https://github.com/RKelln/agentmap"
-  version "0.1.0-rc.6"
+  version "0.1.0-rc.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RKelln/agentmap/releases/download/v0.1.0-rc.6/agentmap_Darwin_x86_64.tar.gz"
-      sha256 "d8e07e5b5768b70703a4a7911fd7840cf2abdeb0166b6623b6d90bf2d4078fba"
+      url "https://github.com/RKelln/agentmap/releases/download/v0.1.0-rc.7/agentmap_Darwin_x86_64.tar.gz"
+      sha256 "14fe94fde8e23bf84575a3d8f5e821c89e7db16423c6f85122196fd4f8107c89"
 
       define_method(:install) do
         bin.install "agentmap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RKelln/agentmap/releases/download/v0.1.0-rc.6/agentmap_Darwin_arm64.tar.gz"
-      sha256 "f87ca3f040f7e448de22199ba208c3dc858688f70cd393aee2583d545fa38812"
+      url "https://github.com/RKelln/agentmap/releases/download/v0.1.0-rc.7/agentmap_Darwin_arm64.tar.gz"
+      sha256 "fd2d4bf966384f0c870e51482d1c07652bdd12a52288eb524ef7f57ae2dac040"
 
       define_method(:install) do
         bin.install "agentmap"
@@ -29,15 +29,15 @@ class Agentmap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RKelln/agentmap/releases/download/v0.1.0-rc.6/agentmap_Linux_x86_64.tar.gz"
-      sha256 "a507eae15cd6910f0f618d756cf99c63cee02b2d306a3c6ec0ffc54ec65a0e34"
+      url "https://github.com/RKelln/agentmap/releases/download/v0.1.0-rc.7/agentmap_Linux_x86_64.tar.gz"
+      sha256 "e8b3bb2fc87981a642b37a2c827a8ec956aa9c1b18cf952b45d16b4968f16b0c"
       define_method(:install) do
         bin.install "agentmap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RKelln/agentmap/releases/download/v0.1.0-rc.6/agentmap_Linux_arm64.tar.gz"
-      sha256 "bdcef9dc2fd2c6afe5d8e9a3b65a43019e3085fb41f0be5640c01bffca76e372"
+      url "https://github.com/RKelln/agentmap/releases/download/v0.1.0-rc.7/agentmap_Linux_arm64.tar.gz"
+      sha256 "e9f6a792002f061619eb70c0a6116204bd991bf0e9ee7d28171018df8ef795a4"
       define_method(:install) do
         bin.install "agentmap"
       end
